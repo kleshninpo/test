@@ -1,0 +1,57 @@
+{
+  "extends": [ "standard", "plugin:vue/base" ],
+  "env": {
+    "es6": true,
+    "amd": true,
+    "commonjs": true,
+    "node": false
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module"
+  },
+	"globals": { "chrome": false, "jQuery": false, "$": false, "Vue": false, "process": false },
+  "rules": {
+    "indent": ["warn", 2, {
+      "SwitchCase": 1,
+      "VariableDeclarator": { "var": 2, "let": 2, "const": 3 },
+      "CallExpression": { "arguments": "off" }
+    }],
+    "key-spacing": 0,
+    "no-multi-spaces": ["warn", {
+      "ignoreEOLComments": true,
+      "exceptions": {
+        "VariableDeclarator": true,
+        "AssignmentExpression": true
+      }
+    }],
+    "space-before-function-paren": ["warn", {
+      "anonymous": "always",
+      "named": "never"
+    }],
+    "linebreak-style": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "quotes" : 0,
+    "curly"  : [ "error", "multi", "consistent" ],
+    "semi"   : [ "error", "always" ],
+    "one-var": 0,
+    "no-prototype-builtins": 0,
+    "no-sequences": 0,
+    "no-cond-assign": "off",
+    "no-console": 0,
+    "no-void": 0,
+    
+    "vue/script-indent": ["warn", 2, {
+      "baseIndent": 1,
+      "switchCase": 1
+    }]
+  },
+
+  "overrides": [{
+    "files": ["*.vue"],
+    "rules": {
+      "indent": "off",
+      "key-spacing": "off"
+    }
+  }]
+}

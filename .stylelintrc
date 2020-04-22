@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "block-closing-brace-newline-before": null,
+    "block-opening-brace-space-before": null,
+    "block-no-empty": null,
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null,
+    "declaration-block-semicolon-newline-after": null,
+    "declaration-block-single-line-max-declarations": null,
+    "declaration-colon-space-before": null,
+    "declaration-block-trailing-semicolon": null,
+    "declaration-no-important": null,
+    "function-comma-space-after": null,
+    "indentation": null,
+    "max-empty-lines": null,
+    "no-descending-specificity": null,
+    "rule-empty-line-before": null
+  }
+}
