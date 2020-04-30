@@ -8,6 +8,7 @@
   import Vue from 'vue/dist/vue.esm.js';
   import { mapGetters } from 'vuex';
   import HandbookPre from '@/components/HandbookPre.vue';
+  import HandbookPar from '@/components/HandbookPar.vue';
   export default {
     data: () => ({
       component: null,
@@ -20,10 +21,10 @@
         this.component = Vue.extend({
           template: `
             <article>
-              ${this.currentHandbookChapterHtml.replace(/<pre/gi, '$& is="handbook-pre"')}
+              ${this.currentHandbookChapterHtml.replace(/<p/gi, '$& is="handbook-par"').replace(/<pre/gi, '$& is="handbook-pre"')}
             </article>
           `,
-          components: { HandbookPre },
+          components: { HandbookPre, HandbookPar },
           parent: this,
         });
         this.$nextTick(() => this.$emit('update'));
