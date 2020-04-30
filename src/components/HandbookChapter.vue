@@ -1,5 +1,6 @@
 <template>
   <div class="chapter">
+    Hello!
     <component :is="component" />
   </div>
 </template>
